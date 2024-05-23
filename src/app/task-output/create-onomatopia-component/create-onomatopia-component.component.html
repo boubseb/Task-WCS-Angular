@@ -1,0 +1,13 @@
+<form (ngSubmit)="createOnomatopia()">
+
+    <fieldset>
+
+      <label for="title-order">new onomatope</label>
+
+      <input id="title-order" name="newOnomatope" type="text" [(ngModel)]="newOnomatopia" required>
+
+    </fieldset>
+
+    <button type="submit">Sauvegarder</button>
+
+</form>

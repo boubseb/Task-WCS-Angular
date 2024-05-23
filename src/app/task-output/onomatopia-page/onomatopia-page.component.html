@@ -1,0 +1,5 @@
+@for(onomatope of onomatopoeiaList;track onomatope){
+    {{onomatope}}
+    <br>
+  }
+  <app-create-onomatopia-component (sendOnomatopiaToParent)=onReceiveNewOnomatopia($event)></app-create-onomatopia-component>

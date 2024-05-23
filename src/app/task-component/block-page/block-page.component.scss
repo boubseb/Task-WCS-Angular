@@ -1,0 +1,22 @@
+ul {
+    margin-left: 10px;
+    margin-top: 10px;
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    height: calc(100vh - 10px);
+
+
+    li:nth-child(2n) {
+        justify-self: end;
+    }
+
+    li:nth-child(4n+3),
+    li:nth-child(4n+4) {
+        align-self: end;
+    }
+
+
+
+}

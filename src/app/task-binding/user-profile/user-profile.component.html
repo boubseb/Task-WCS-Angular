@@ -1,0 +1,14 @@
+<img [src]="user1.photo">
+<br>
+{{user1.quote}}
+<br>
+<input type="texte" [(ngModel)]="user1.quote" [alt]="user1.quote">
+<p>Nom :{{user1.name}}</p>
+<p>Prénom :{{user1.firstName}}</p>
+<!-- @if(isDisplayAge){
+    <p [hidden]="isDisplayAge">Age : {{user1.age}}</p>
+} -->
+
+<p [hidden]="!isDisplayAge">Age : {{user1.age}}</p>
+
+<button (click)="isDisplayAge=!isDisplayAge">Display Age</button>

@@ -1,0 +1,28 @@
+.kitten-card {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .image {
+    width: 99%; /* Adjust as needed */
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .info {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .kitten-card:hover .info {
+    display: block;
+  }
+
+
+
+
+  

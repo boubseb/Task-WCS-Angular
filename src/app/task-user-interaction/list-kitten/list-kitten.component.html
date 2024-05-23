@@ -1,0 +1,14 @@
+<div class="available-kittens">
+    @for(kitten of (kittens$ | async); track kitten){
+      <div class="kitten-card">
+        <h2>{{ kitten.name }}</h2>
+        <p>Date of Birth: {{ kitten.dateOfBirth | date: 'dd/MM/yyyy' }}</p>
+        <p>Breed: {{ kitten.breed }}</p>
+        <img [src]="kitten.image" alt="{{ kitten.name }}">
+        <button (click)="adopteKitten(kitten)">Adopt this kitten</button>
+      </div>
+      
+    }
+      
+  </div>
+  

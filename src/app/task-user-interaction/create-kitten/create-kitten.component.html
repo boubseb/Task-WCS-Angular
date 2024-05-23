@@ -1,0 +1,87 @@
+<form #kittenForm="ngForm" (ngSubmit)="onSubmit()">
+  <h1>form to add kitten</h1>
+
+
+    <fieldset>
+     
+  
+      <label for="name-field">Name</label>
+      @if(name.errors ){
+        @if(name.errors['required']){
+            <span>name is requireds</span>
+        }
+    }
+  
+      <input id="name-field" name="name" [(ngModel)]="kitten.name" #name="ngModel" type="text" required>
+  
+    </fieldset>
+  
+  
+   <!-- Message d'erreurs de email -->
+    
+   
+  
+  
+  
+    <fieldset>
+  
+      <label for="breed-field">breed</label>
+      @if(breed.errors ){
+        @if(breed.errors['required']){
+            <span>breed is required</span>
+        }   
+    }
+  
+      <input id="breed-field" name="breed" type="text" [(ngModel)]="kitten.breed" #breed="ngModel" required >
+  
+    </fieldset>
+  
+
+
+  
+  
+  
+  
+    <fieldset>
+  
+      <label for="dateOfBirth-field">Date Of Birth</label>
+
+      @if(dateOfBirth.errors ){
+        @if(dateOfBirth.errors['required']){
+            <span>Date Of Birth is required</span>
+        }     
+    }
+  
+      <input id="dateOfBirth-field" name="dateOfBirth" type="date" [(ngModel)]="kitten.dateOfBirth" #dateOfBirth="ngModel" required>
+  
+    </fieldset>
+  
+
+  
+   
+
+    <fieldset>
+  
+        <label for="image-link-field">image link</label>
+
+        @if(image.errors ){
+          @if(image.errors['required']){
+              <span>image link is required</span>
+          }     
+      }
+    
+        <input id="image-link-field" name="image-link" type="link" [(ngModel)]="kitten.image" #image="ngModel" required>
+    
+      </fieldset>
+
+
+    
+
+  
+    <button type="submit" 
+    [disabled]="!kittenForm.valid"
+    [class.active]="kittenForm.valid"
+    [class.invalid]="!kittenForm.valid">
+Add Kitten
+</button>
+  </form>

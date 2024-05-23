@@ -1,0 +1,14 @@
+firstname: {{developer.firstName}}
+<br>
+lastname: {{developer.lastName}}
+<br>
+age: {{developer.age}}
+<br>
+gender: {{developer.gender}}
+<br>
+bio: {{developer.bio}}
+<br>
+@for (skill of developer.skills;track skill) {
+    Skills:<br>
+    <app-skill [skill]=skill></app-skill>
+    }

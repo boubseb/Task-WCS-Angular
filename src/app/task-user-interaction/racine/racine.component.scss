@@ -1,0 +1,19 @@
+.main-container{
+    
+    display: flex;
+    justify-content: left;
+    min-height: 100vh;
+    app-user-kitten{
+        border-right: 2px solid #000;
+        min-height: 100%;
+        width: 15vw;   
+    }
+    .container{
+        width: 85vw;
+    }
+
+}
+*{
+    background-color: #f9f9f9;
+    
+}

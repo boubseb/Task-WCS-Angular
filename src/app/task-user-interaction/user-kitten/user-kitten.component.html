@@ -1,0 +1,14 @@
+<div class="user-kittens-container">
+  <h1 class="title">User Kittens</h1>
+  @for ( kitten of (usertKittens$ | async); track kitten) {
+    <div class="kitten-card"
+         (mouseenter)="showInfo()"
+         (mouseleave)="showInfo()">
+      <img class="image" [src]="kitten.image" alt="{{ kitten.name }}">
+      <div class="info" *ngIf="isDisplay">
+        <p>Name: {{ kitten.name }}</p>
+      </div>
+    </div>
+  }
+</div>
+  
