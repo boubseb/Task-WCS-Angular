@@ -1,1 +1,3 @@
-<p>pokedex-page works!</p>
+<a routerLink="create">form Link</a>
+<app-pokemon-list [pokemons]="pokemons" (sendPokemonSelectedToPage)=onReceivePokemonSelected($event)></app-pokemon-list>
+<app-pokemon-detail [pokemonSelected]="pokemonSelected" ></app-pokemon-detail>

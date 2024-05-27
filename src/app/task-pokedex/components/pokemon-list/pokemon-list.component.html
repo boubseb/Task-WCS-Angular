@@ -1,1 +1,7 @@
-<p>pokemon-list works!</p>
+@for(pokemon of pokemons;track pokemon){
+    <div (click)="onClickPokemon(pokemon)">
+        {{pokemon.name}}
+        <img [src]=pokemon.imageUrl>
+    </div>
+   
+}

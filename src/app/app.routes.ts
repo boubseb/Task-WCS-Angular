@@ -12,6 +12,8 @@ import { CocktailListComponent } from './task-service/cocktail-list/cocktail-lis
 import { DirectivePageComponent } from './task-directives/directive-page/directive-page.component';
 import { ListCoktailComponent } from './task-service-2/list-coktail/list-coktail.component';
 import { NasaComponent } from './task-NASA/nasa/nasa.component';
+import { PokedexPageComponent } from './task-pokedex/pages/pokedex-page/pokedex-page.component';
+import { CreatePokemonComponent } from './task-pokedex/pages/create-pokemon/create-pokemon.component';
 
 export const routes: Routes = [{ path: '', component: HomeComponent },
 { path: 'task-component', component: BlockPageComponent },
@@ -30,8 +32,8 @@ export const routes: Routes = [{ path: '', component: HomeComponent },
 { path: 'task-service', component: ListCoktailComponent },
 { path: 'task-service-2', component: CocktailListComponent },
 { path: 'task-NASA', component: NasaComponent },
-{ path: 'task-pokedex', component: UserProfileComponent },
-{ path: 'task-rxjs', component: UserProfileComponent },
+{ path: 'task-pokedex', component: PokedexPageComponent },
+{ path: 'task-pokedex/create', component: CreatePokemonComponent },
 
   
    ];

@@ -1,0 +1,68 @@
+<form #pokeForm="ngForm" (ngSubmit)="onSubmit()">
+
+  
+  
+
+    <fieldset>
+  
+      <label for="name-filed">Name</label>
+  
+      <input id="name-field" name="name" [(ngModel)]="newPokemon.name" #name="ngModel" type="text" required  >
+  
+    </fieldset>
+  
+  
+   <!-- Message d'erreurs de email -->
+    @if(name.errors && pokeForm.submitted){
+        @if(name.errors['required']){
+            <span>Le champ name est requis</span>
+        }        
+    }
+   
+  
+  
+  
+    <fieldset>
+  
+      <label for="imageUrl-field">image URL</label>
+  
+      <input id="imageUrl-field" name="imageUrl" type="text" [(ngModel)]="newPokemon.imageUrl" #imageUrl="ngModel" required >
+  
+    </fieldset>
+  
+  
+  <!-- Message d'erreurs de firstname -->
+
+  @if(imageUrl.errors && pokeForm.submitted){
+    @if(imageUrl.errors['required']){
+        <span>Le champ imageUrl est requis</span>
+    
+    
+}
+  }
+  
+  
+  
+    <fieldset>
+  
+      <label for="despcription-field">descrpition</label>
+  
+      <input id="descrpition-field" name="description" type="text" [(ngModel)]="newPokemon.description" #description="ngModel" required >
+  
+    </fieldset>
+  
+  
+   
+  
+    @if(description.errors && pokeForm.submitted){
+        @if(description.errors['required']){
+            <span>Le champ lastname est requis</span>
+        }
+       
+        
+    }
+
+   
+    <button type="submit" [disabled]="!pokeForm.valid">add Pokemon</button>
+  
+  </form>
