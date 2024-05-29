@@ -1,9 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NasaServiceService } from '../nasa-service.service';
 import { NasaComponent } from './nasa.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { Observable, of } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
 
 describe('NasaComponent', () => {
 
@@ -11,11 +12,12 @@ describe('NasaComponent', () => {
 
     await TestBed.configureTestingModule({
 
-      imports: [HttpClientModule, NasaComponent],
+      imports: [HttpClientModule, NasaComponent]
 
     }).compileComponents();
 
   });
+
 
 
   it('should create the app', () => {

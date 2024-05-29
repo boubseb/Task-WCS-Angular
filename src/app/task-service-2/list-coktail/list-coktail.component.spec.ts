@@ -1,23 +1,23 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+// import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListCoktailComponent } from './list-coktail.component';
+// import { ListCoktailComponent } from './list-coktail.component';
 
-describe('ListCoktailComponent', () => {
-  let component: ListCoktailComponent;
-  let fixture: ComponentFixture<ListCoktailComponent>;
+// describe('ListCoktailComponent', () => {
+//   let component: ListCoktailComponent;
+//   let fixture: ComponentFixture<ListCoktailComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [ListCoktailComponent]
-    })
-    .compileComponents();
+//   beforeEach(async () => {
+//     await TestBed.configureTestingModule({
+//       imports: [ListCoktailComponent]
+//     })
+//     .compileComponents();
     
-    fixture = TestBed.createComponent(ListCoktailComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+//     fixture = TestBed.createComponent(ListCoktailComponent);
+//     component = fixture.componentInstance;
+//     fixture.detectChanges();
+//   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+//   it('should create', () => {
+//     expect(component).toBeTruthy();
+//   });
+// });

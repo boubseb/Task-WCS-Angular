@@ -1,7 +1,8 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { CocktailListComponent } from './task-service/cocktail-list/cocktail-list.component';
 import { CocktailService } from './task-service/service/cocktail.service';
-import { HttpClientModule } from '@angular/common/http';
+
+
 
 
 
@@ -11,7 +12,7 @@ describe('CocktailListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HttpClientModule, CocktailListComponent]
+      imports: [ CocktailListComponent]
     })
     .compileComponents();
     
